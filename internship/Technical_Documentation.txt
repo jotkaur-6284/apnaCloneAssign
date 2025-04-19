@@ -1,0 +1,78 @@
+Project Title: Apna.co Clone – Job Portal Web Application
+
+Overview:
+The project is a working clone of the Apna.co job portal as part of an 
+internship task. It emulates major functionalities like user login, 
+creating profiles, submission of contact forms, and integrating the 
+database with HTML, CSS, JavaScript, PHP, and MySQL. The frontend of 
+the project emulates the design pattern of Apna.co, giving a smooth 
+user experience.
+
+
+Modules & Features:
+
+
+1. Login Module
+    File: index.html, index.php, Emp_login.html
+    Description: Allows users to input their mobile number to log in.
+    Features:
+        OTP-style UI input.
+        Client-side form validation.
+        Redirects to profile page upon successful login.
+
+2. Profile Module
+    File: profile.php
+    Description: Records the user's fundamental profile information.
+    Features:
+        Input fields: Name, Date of Birth, Gender, Email.
+        Optional email input and WhatsApp updates checkbox.
+        Saves data into the basic_details table in MySQL.
+        Popup message displayed upon successful data submission and redirect to home page.
+
+3. Contact Module
+    Files: contactUs.html, contact.php
+    Description: Processes employer contact form submissions.
+    Features:
+        Fields: Full Name, Work Email, Mobile Number, Role, Company Name, Company Size.
+        Form submission to contact.php for MySQL storage.
+        Displays success message via JavaScript alert on data insert.
+
+4. Database Module
+    File: project.sql
+    Tables:
+        basic_details: Stores user profile data.
+        contact_page: Duplicate structure for testing/demo.
+        contact_details: Holds employer queries.
+        Functionality: Uses auto-incremented IDs and timestamps for logging entries.
+
+5.Employee Login (Dummy UI)
+    Files: Emp_login.html
+    Functionality:
+        Provides a login form for employee access.
+        Purely front-end; not connected to a backend.
+
+
+Technologies Used:
+
+
+Technology	                    Purpose
+HTML	                Web page structure markup
+CSS	                    CSS-styling the UI elements
+JavaScript          	Client-side behaviour, form messages, redirection
+PHP	                    Server-side scripting to process form submissions
+MySQL               	Back-end database for storing user info
+XAMPP               	Local dev environment (Apache, PHP, MySQL)
+
+
+Running Locally:
+    Run Apache and MySQL through XAMPP.
+    Put the project folder (internship) within htdocs.
+    Move the project.sql file into phpMyAdmin under a database called assignment.
+    Launch the browser and access http://localhost/internship/assignment_of_apna.co_clone/index.html.
+UI Highlights
+    Pixel-accurate layout mimicking apna.co's homepage.
+    Responsive design.
+    Simple and clean interface for forms and input fields.
+Future Scope & Improvements:
+    Implement real OTP verification for safe login.
+    User authentication and session management.
